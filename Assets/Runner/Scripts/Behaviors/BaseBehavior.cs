@@ -4,6 +4,7 @@ using Runner.Controllers;
 
 namespace Runner.Behaviors
 {
+    //Base class for behaviors
     public abstract class BaseBehavior
     {
         protected PlayerController _player;

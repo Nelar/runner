@@ -5,6 +5,7 @@ using System;
 
 namespace Runner.Behaviors
 {
+    //Describes the character's behavior when encountering an flying obstacle 
     public class FlighterBehavior : BaseBehavior
     {
         public FlighterBehavior(PlayerController player, ObstaclesConfig.ObstacleConfig config) : base(player, config) { }

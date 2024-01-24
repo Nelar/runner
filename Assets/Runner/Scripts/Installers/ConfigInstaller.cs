@@ -4,6 +4,7 @@ using Zenject;
 
 namespace Runner.Installers
 {
+    //Installer in DI for configuration classes
     [CreateAssetMenu(fileName = "Configs", menuName = "Installers/Configs")]
     public class ConfigsInstaller : ScriptableObjectInstaller<ConfigsInstaller>
     {

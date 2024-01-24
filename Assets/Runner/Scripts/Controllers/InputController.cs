@@ -3,6 +3,7 @@ using Zenject;
 
 namespace Runner.Controllers
 {
+    //A class that receives data from the joystick or keyboard and passes it to the character controller
     public class InputController : ITickable
     {
         readonly DynamicJoystick _joystick;

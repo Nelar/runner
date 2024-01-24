@@ -6,6 +6,7 @@ using static Runner.Configs.RoadConfig;
 
 namespace Runner.Controllers
 {
+    //Class controlling the generation of road and obstacles
     public class RoadController
     {
         public struct ObstacleInfo
@@ -57,6 +58,7 @@ namespace Runner.Controllers
                 _obstaclesChanceAllWeight += obstacleChance.Chance;
             }
 
+            //Create the initial state of the road
             _sections.Add(new RoadSectionInfo(new ObstacleInfo(ObstacleType.None, Vector2.zero), 0.0f));
             for (var i = 1; i < _config.StartRoadSectionsCount; i++)
             {
@@ -66,6 +68,7 @@ namespace Runner.Controllers
             player.OnChangePosition += ChangePlayePosition;
         }
 
+        
         void ChangePlayePosition(Vector3 position)
         {
             _playerPositionOffset += (position.z - _lastPlayerPosition);
@@ -74,6 +77,7 @@ namespace Runner.Controllers
             if (_playerPositionOffset < _config.SpawnSectionEveryDistance) return;
 
             _playerPositionOffset -= _config.SpawnSectionEveryDistance;
+            //After the player passes the road section, generate a new section
             SpawnSection();
         }
 
@@ -83,6 +87,8 @@ namespace Runner.Controllers
 
             var spawnedWeight = Range(0, _obstaclesChanceAllWeight);
             var currentWeight = 0;
+
+            //Generate obstacles based on weights
             foreach (var obstacleChance in _config.ObstacleSpawnChances)
             {
                 currentWeight += obstacleChance.Chance;

@@ -4,6 +4,7 @@ using Zenject;
 
 namespace Runner.Installers
 {
+    //Installer in DI for controllers
     public class ControllersInstaller : MonoInstaller
     {
         public override void InstallBindings()

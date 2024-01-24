@@ -7,6 +7,7 @@ using static Runner.Controllers.RoadController;
 
 namespace Runner.Views
 {
+    //Class describing the view of the road section
     public class RoadSectionView : MonoBehaviour
     {
         [Serializable]

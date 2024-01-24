@@ -6,6 +6,7 @@ using static Runner.Controllers.PlayerController;
 
 namespace Runner.Views
 {
+    //Class describing the display of the game character
     public class PlayerView : MonoBehaviour
     {
         [SerializeField]
@@ -24,6 +25,8 @@ namespace Runner.Views
         public void Init(PlayerController playerController)
         {
             _playerController = playerController;
+
+            //When there is a signal from the controller, update the view
             _playerController.OnChangePosition += pos => transform.position = pos;
             _playerController.OnChangeState += ChangeState;
         }

@@ -4,6 +4,7 @@ using static Runner.Configs.RoadConfig;
 
 namespace Runner.Controllers
 {
+    //A character behavior controller that creates an object with a behavior based on an obstacle type
     public class BehaviorsByObstacleController
     {
         readonly ObstaclesConfig _config;

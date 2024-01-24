@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Runner.Configs
 {
+    //A class with configs for generating a road and obstacles on it
     [System.Serializable]
     public class RoadConfig
     {
@@ -25,6 +26,8 @@ namespace Runner.Configs
             private int _chance;
 
             public ObstacleType Type => _type;
+
+            //Chance of generating an obstacle
             public int Chance => _chance;
         }
 

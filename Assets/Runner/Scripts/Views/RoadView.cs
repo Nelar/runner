@@ -5,6 +5,7 @@ using Zenject;
 
 namespace Runner.Views
 {
+    ////Class describing road view
     public class RoadView : MonoBehaviour
     {
         [SerializeField]
@@ -17,6 +18,8 @@ namespace Runner.Views
         public void Init(RoadController roadController)
         {
             _roadController = roadController;
+
+            //When we receive a signal from the controller, update the view
             _roadController.OnRoadUpdate += UpdateRoad;
 
             UpdateRoad();

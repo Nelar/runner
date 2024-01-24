@@ -4,6 +4,7 @@ using Zenject;
 
 namespace Runner.Installers
 {
+    //Installer in DI for MonoBehavior views
     public class ViewsInstaller : MonoInstaller
     {
         [SerializeField]

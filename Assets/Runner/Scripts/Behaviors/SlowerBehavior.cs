@@ -5,6 +5,7 @@ using System;
 
 namespace Runner.Behaviors
 {
+    //Describes the character's behavior when encountering an slow down obstacle 
     public class SlowerBehavior : BaseBehavior
     {
         private const float _speed = -2f;

@@ -6,7 +6,8 @@ using static Runner.Configs.RoadConfig;
 
 namespace Runner.Configs
 {
-    [Serializable]
+    //A class with configs for obstacles
+    [Serializable]    
     public class ObstaclesConfig
     {
         [Serializable]
@@ -18,6 +19,8 @@ namespace Runner.Configs
             private float _duration;
 
             public ObstacleType Type => _type;
+
+            //Time of behavioral action after collision with an obstacle
             public float Duration => _duration;
         }
 

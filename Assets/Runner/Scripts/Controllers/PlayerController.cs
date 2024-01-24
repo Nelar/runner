@@ -7,6 +7,7 @@ using DG.Tweening;
 
 namespace Runner.Controllers
 {
+    //A class that controls the behavior of a game character
     public class PlayerController : ITickable
     {
         public enum PlayerState
@@ -75,6 +76,8 @@ namespace Runner.Controllers
             if (_speed < 0f) _speed = 0f;
         }
         public void MoveToDirection(float direction) => _direction = direction;
+
+        //When colliding with an obstacle, trigger the appropriate behavior
         public void TriggeredObstacle(ObstacleType type) => _behaviorsController.RunBehavior(type, this);
     }
 }

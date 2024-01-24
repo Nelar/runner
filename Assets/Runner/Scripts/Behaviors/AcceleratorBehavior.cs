@@ -5,6 +5,7 @@ using System;
 
 namespace Runner.Behaviors
 {
+    //Describes the character's behavior when encountering an accelerating obstacle
     public class AcceleratorBehavior : BaseBehavior
     {
         private const float _speed = 4f;

@@ -4,6 +4,7 @@ using Zenject;
 
 namespace Runner.Installers
 {
+    //Installer in DI for UI views
     public class UIViewInstaller : MonoInstaller
     {
         [SerializeField]

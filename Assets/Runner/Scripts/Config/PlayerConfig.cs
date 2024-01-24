@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Runner.Configs
 {
+    //Class with game character configurations
     [System.Serializable]
     public class PlayerConfig
     {

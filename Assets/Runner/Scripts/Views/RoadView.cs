@@ -24,7 +24,6 @@ namespace Runner.Views
 
         void UpdateRoad()
         {
-            Debug.Log("UpdateRoad");
             var sectionIndex = 0;
             foreach (var sectionInfo in _roadController.Sections) 
             {

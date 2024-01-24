@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using static Runner.Configs.RoadConfig;
-using static System.Collections.Specialized.BitVector32;
 
 namespace Runner.Controllers
 {
@@ -40,14 +39,14 @@ namespace Runner.Controllers
         public IReadOnlyList<RoadSectionInfo> Sections => _sections;
         public Action OnRoadUpdate = delegate { };
 
-        private RoadConfig _config;
+        readonly RoadConfig _config;
+        readonly float _obstaclesChanceAllWeight;
+
         private float _lastSectionPosition = 0f;
         private float _playerPositionOffset = 0f;
         private float _lastPlayerPosition = 0f;
 
-        private List<RoadSectionInfo> _sections = new List<RoadSectionInfo>();
-
-        readonly float _obstaclesChanceAllWeight;                
+        private List<RoadSectionInfo> _sections = new List<RoadSectionInfo>();        
 
         public RoadController(RoadConfig config, PlayerController player) 
         { 
@@ -71,6 +70,7 @@ namespace Runner.Controllers
         {
             _playerPositionOffset += (position.z - _lastPlayerPosition);
             _lastPlayerPosition = position.z;
+
             if (_playerPositionOffset < _config.SpawnSectionEveryDistance) return;
 
             _playerPositionOffset -= _config.SpawnSectionEveryDistance;

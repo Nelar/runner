@@ -6,7 +6,7 @@ namespace Runner.Controllers
 {
     public class BehaviorsByObstacleController
     {
-        private ObstaclesConfig _config;
+        readonly ObstaclesConfig _config;
         public BehaviorsByObstacleController(ObstaclesConfig config)
         {
             _config = config;

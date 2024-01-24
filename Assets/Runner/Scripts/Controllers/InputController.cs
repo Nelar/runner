@@ -4,11 +4,11 @@ using Zenject;
 namespace Runner.Controllers
 {
     public class InputController : ITickable
-    {        
-        VariableJoystick _joystick;
-        PlayerController _player;
+    {
+        readonly DynamicJoystick _joystick;
+        readonly PlayerController _player;
 
-        public InputController(VariableJoystick joystick, PlayerController player)
+        public InputController(DynamicJoystick joystick, PlayerController player)
         {
             _joystick = joystick;
             _player = player;

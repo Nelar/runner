@@ -21,7 +21,7 @@ MonoBehaviour:
   _roadConfig:
     _startRoadSectionsCount: 10
     _spawnSectionEveryDistance: 8
-    _obstacleSpawnDistance: 2.5
+    _obstacleSpawnDistance: 2.3
     _obstacleSpawnChances:
     - _type: 0
       _chance: 50

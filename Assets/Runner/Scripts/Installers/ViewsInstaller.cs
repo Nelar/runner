@@ -7,9 +7,9 @@ namespace Runner.Installers
     public class ViewsInstaller : MonoInstaller
     {
         [SerializeField]
-        PlayerView _player;
+        private PlayerView _player;
         [SerializeField]
-        RoadView _road;
+        private RoadView _road;
 
         public override void InstallBindings()
         {

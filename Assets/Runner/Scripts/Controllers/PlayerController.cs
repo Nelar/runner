@@ -17,15 +17,16 @@ namespace Runner.Controllers
         }
 
         public Action<Vector3> OnChangePosition = delegate { };
-        public Action<PlayerState> OnChangeState = delegate { };    
+        public Action<PlayerState> OnChangeState = delegate { };
 
-        private Vector3         _position = Vector3.zero;
-        private PlayerState     _state = PlayerState.Run;
+        readonly PlayerConfig _config;
+        readonly BehaviorsByObstacleController _behaviorsController;
 
-        private float           _direction = 0f;
-        private float           _speed = 1f;
-        private PlayerConfig    _config;
-        private BehaviorsByObstacleController _behaviorsController;
+        private Vector3 _position = Vector3.zero;
+        private PlayerState _state = PlayerState.Run;
+
+        private float _direction = 0f;
+        private float _speed = 1f;
 
         public PlayerController(PlayerConfig config, BehaviorsByObstacleController behaviorsController)
         {

@@ -82,7 +82,6 @@
     <Compile Include="Assets\Runner\Scripts\Behaviors\BaseBehavior.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\ProceduralImageModifier.cs" />
     <Compile Include="Assets\External\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\Runner\Scripts\Controllers\ObstacleBehaviorsController.cs" />
     <Compile Include="Assets\Runner\Scripts\Views\RoadSectionView.cs" />
     <Compile Include="Assets\Runner\Scripts\Config\ObstaclesConfig.cs" />
     <Compile Include="Assets\Runner\Scripts\Installers\ViewsInstaller.cs" />

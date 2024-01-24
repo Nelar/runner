@@ -9,11 +9,11 @@ namespace Runner.Views
     public class PlayerView : MonoBehaviour
     {
         [SerializeField]
-        private string _idleAnimation = "idle";
+        private string _idleAnimation;
         [SerializeField]
-        private string _runAnimation = "run";
+        private string _runAnimation;
         [SerializeField]
-        private string _flyAnimation = "fly";
+        private string _flyAnimation;
 
         [SerializeField]
         private Animator _animator;

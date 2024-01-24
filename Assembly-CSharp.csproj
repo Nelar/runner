@@ -62,16 +62,66 @@
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\Modifiers\FreeModifier.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\EmptySprite.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\ProceduralImage.cs" />
+    <Compile Include="Assets\Runner\Scripts\Views\ObstacleView.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\Modifiers\CustomPremadeModifier.cs" />
+    <Compile Include="Assets\Runner\Scripts\Config\PlayerConfig.cs" />
+    <Compile Include="Assets\Runner\Scripts\Views\PlayerView.cs" />
+    <Compile Include="Assets\Runner\Scripts\Views\RoadView.cs" />
+    <Compile Include="Assets\External\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Runner\Scripts\Controllers\BehaviorsByObstacleController.cs" />
+    <Compile Include="Assets\Runner\Scripts\Controllers\PlayerController.cs" />
+    <Compile Include="Assets\External\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\Modifiers\RoundModifier.cs" />
+    <Compile Include="Assets\Runner\Scripts\Installers\ControllersInstaller.cs" />
+    <Compile Include="Assets\External\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Runner\Scripts\Installers\UIViewInstaller.cs" />
+    <Compile Include="Assets\Runner\Scripts\Controllers\InputController.cs" />
+    <Compile Include="Assets\Runner\Scripts\Behaviors\SlowerBehavior.cs" />
+    <Compile Include="Assets\Runner\Scripts\Config\RoadConfig.cs" />
+    <Compile Include="Assets\Runner\Scripts\UI\UIInGameMenu.cs" />
+    <Compile Include="Assets\Runner\Scripts\Behaviors\BaseBehavior.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\ProceduralImageModifier.cs" />
+    <Compile Include="Assets\External\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Runner\Scripts\Controllers\ObstacleBehaviorsController.cs" />
+    <Compile Include="Assets\Runner\Scripts\Views\RoadSectionView.cs" />
+    <Compile Include="Assets\Runner\Scripts\Config\ObstaclesConfig.cs" />
+    <Compile Include="Assets\Runner\Scripts\Installers\ViewsInstaller.cs" />
+    <Compile Include="Assets\Runner\Scripts\Controllers\RoadController.cs" />
+    <Compile Include="Assets\External\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\Attributes\ModifierID.cs" />
+    <Compile Include="Assets\Runner\Scripts\UI\UIPauseView.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\Modifiers\UniformModifier.cs" />
     <Compile Include="Assets\External\ProceduralUIImage\Scripts\Modifiers\OnlyOneEdgeModifier.cs" />
+    <Compile Include="Assets\Runner\Scripts\Installers\ConfigInstaller.cs" />
+    <Compile Include="Assets\Runner\Scripts\Behaviors\AcceleratorBehavior.cs" />
+    <Compile Include="Assets\Runner\Scripts\Behaviors\FlighterBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\External\UniRx\ReadMe.txt" />
+    <None Include="Assets\External\Casual level pack\Shaders\Resources\Simple water\WaterMask.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\External\Casual level pack\Shaders\Water.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\External\Casual level pack\Shaders\Resources\Simple water\WaterBlur.shader" />
     <None Include="Assets\External\ProceduralUIImage\Resources\Shaders\ProceduralImageRuntime.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -316,6 +366,15 @@
     </Reference>
     <Reference Include="Zenject-usage">
       <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\UnityEditors\2022.3.12f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -760,6 +819,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{18DC6EAE-A731-76F5-0E2E-32C7F28769A5}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="UniTask.Linq.csproj">
       <Project>{9EFAFB1E-567F-11CF-30BD-473F407E8CF0}</Project>
       <Name>UniTask.Linq</Name>
@@ -779,10 +842,6 @@
     <ProjectReference Include="UniTask.csproj">
       <Project>{31C21A14-BBE0-2122-E0DD-C1C06FA43D9A}</Project>
       <Name>UniTask</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniRx.csproj">
-      <Project>{BABB1D3A-3FDD-DEDB-A442-344DB9D6F850}</Project>
-      <Name>UniRx</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.DOTween.csproj">
       <Project>{0D52850A-104E-B339-EDDC-7AA156952478}</Project>

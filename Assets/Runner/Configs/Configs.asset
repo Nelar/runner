@@ -34,8 +34,8 @@ MonoBehaviour:
   _obstaclesConfig:
     _obstacles:
     - _type: 1
-      _duration: 5
+      _duration: 10
     - _type: 2
-      _duration: 3
+      _duration: 10
     - _type: 3
-      _duration: 6
+      _duration: 10
